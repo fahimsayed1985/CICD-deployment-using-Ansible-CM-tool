@@ -9,7 +9,7 @@ pipeline {
             steps {
                 //Enable remote triggers
                 script {
-                    properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/bipin115/CICD-deployment-using-Ansible-CM-tool.git'], pipelineTriggers([pollSCM('* * * * *')])])
+                    properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/fahimsayed1985/CICD-deployment-using-Ansible-CM-tool.git'], pipelineTriggers([pollSCM('* * * * *')])])
                 }  
             }
         }
@@ -22,7 +22,7 @@ pipeline {
 	    
 	stage('Git project checkout') {
         steps {
-               git branch: 'master', url: 'https://github.com/bipin115/CICD-deployment-using-Ansible-CM-tool.git'  
+               git branch: 'master', url: 'https://github.com/fahimsayed1985/CICD-deployment-using-Ansible-CM-tool.git'  
           }
         }
         
