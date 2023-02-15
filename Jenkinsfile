@@ -28,7 +28,7 @@ pipeline {
         
         stage(' Applying Playbook to Configurig tomcat server on remote server'){
             steps {
-                sh "ansible-playbook tomcat-setup.yaml -i inventories/dev/hosts"
+                sh "ansible-playbook tomcat-setup.yaml -i /etc/ansible/hosts"
             }
 	}
 		
