@@ -1,3 +1,4 @@
+[myservers]
 192.168.0.200 ansible_become_pass: QOgp$@34
 192.168.0.119 ansible_become_pass: QOgp$@34
 192.168.0.108 ansible_become_pass: QOgp$@34
